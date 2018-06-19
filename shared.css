@@ -1,0 +1,14 @@
+section {
+  border: black 1px solid;
+}
+
+box {
+  background-color: #cacaca;
+  border: black 1px solid;
+  padding: 1em;
+  margin: 1em;
+}
+
+div.content {
+  margin-left:3em;
+}
