@@ -64,7 +64,7 @@
     </section>
 </div>
 
-<h2>flex-shrink using shorthand flex: 0 1 auto;</h2>
+<h2>flex-shrink using shorthand flex: 0 1 auto; (default)</h2>
 <div class="content">
 <pre>&lt;section style="display:flex; max-width:400px;">
     &lt;box style="flex: 0 1 auto;">Left box Lorem ipsum dolor sit amet</box>
@@ -81,8 +81,7 @@
 <h2>flex-shrink using shorthand flex: 0 # auto;</h2>
 <div class="content">
 <pre>&lt;section style="display:flex; max-width:400px;">
-    &lt;box style="flex: 0 0 auto;">Left box Lorem ipsum dolor sit amet</box>
-    &lt;box style="flex: 0 1 auto;">Middle box Lorem ipsum dolor sit amet</box>
+    &lt;box style="flex: 0 1 auto;">Left box Lorem ipsum dolor sit amet</box>
     &lt;box style="flex: 0 2 auto;">Right box Lorem ipsum dolor sit amet</box>
 &lt;/section></pre>
     <section style="display:flex; max-width:400px;">
@@ -91,6 +90,47 @@
     </section>
 </div>
 
+<h2>flex-basis using shorthand flex: 0 1 #%;</h2>
+<div class="content">
+<pre>&lt;section style="display:flex;">
+    &lt;box style="flex: 0 1 auto;">Left box</box>
+    &lt;box style="flex: 0 1 60%;">Middle box</box>
+    &lt;box style="flex: 0 1 auto;">Right box</box>
+    &lt;/section></pre>
+    <section style="display:flex;">
+        <box style="flex: 0 1 auto">Left box</box>
+        <box style="flex: 0 1 60%;">Middle box</box>
+        <box style="flex: 0 1 auto;">Right box</box>
+    </section>
+</div>
+
+<h2>flex-basis using shorthand flex: 0 1 #%; (with shrinking)</h2>
+<div class="content">
+<pre>&lt;section style="display:flex;">
+    &lt;box style="flex: 0 1 auto;">Left box Lorem ipsum dolor sit amet</box>
+    &lt;box style="flex: 0 1 60%;">Middle box Lorem ipsum dolor sit amet</box>
+    &lt;box style="flex: 0 1 auto;">Right box Lorem ipsum dolor sit amet</box>
+    &lt;/section></pre>
+    <section style="display:flex;">
+        <box style="flex: 0 1 auto">Left box Lorem ipsum dolor sit amet</box>
+        <box style="flex: 0 1 60%;">Middle box Lorem ipsum dolor sit amet</box>
+        <box style="flex: 0 1 auto;">Right box Lorem ipsum dolor sit amet</box>
+    </section>
+</div>
+
+<h2>flex-basis using shorthand flex: 0 0 #%; (without shrinking)</h2>
+<div class="content">
+<pre>&lt;section style="display:flex;">
+    &lt;box style="flex: 0 1 auto;">Left box Lorem ipsum dolor sit amet</box>
+    &lt;box style="flex: 0 0 60%;">Middle box Lorem ipsum dolor sit amet</box>
+    &lt;box style="flex: 0 1 auto;">Right box Lorem ipsum dolor sit amet</box>
+    &lt;/section></pre>
+    <section style="display:flex;">
+        <box style="flex: 0 1 auto">Left box Lorem ipsum dolor sit amet</box>
+        <box style="flex: 0 0 60%;">Middle box Lorem ipsum dolor sit amet</box>
+        <box style="flex: 0 1 auto;">Right box Lorem ipsum dolor sit amet</box>
+    </section>
+</div>
 
 </body>
 </html>
