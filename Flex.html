@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>flex examples</title>
+    <title>flex shorthand examples</title>
     <link type="text/css" rel="stylesheet" href="shared.css">
 </head>
 <body>
-<h1>flex</h1>
-<h2>flex-grow using shorthand flex: 1;</h2>
+<h1>flex-grow using shorthand flex</h1>
+<h2>flex: 1;</h2>
 <div class="content">
 <pre>&lt;section style="display:flex;">
     &lt;box>Lorem ipsum dolor sit amet&lt;/box>
@@ -20,7 +20,7 @@
     </section>
 </div>
 
-<h2>flex-grow using shorthand flex: # 1 auto;</h2>
+<h2>flex: # 1 auto;</h2>
 <div class="content">
 <pre>&lt;section style="display:flex;">
     &lt;box style="flex: 0 1 auto;">Lorem ipsum dolor sit amet&lt;/box>
@@ -35,7 +35,7 @@
     </section>
 </div>
 
-<h2>flex-grow using shorthand flex: # 1 auto; (with flex-flow:column;)</h2>
+<h2>flex: # 1 auto; (with flex-flow:column;)</h2>
 <div class="content">
 <pre>&lt;section style="display:flex; flex-flow:column; min-height:600px;">
     &lt;box style="flex: 0 1 auto;">Lorem ipsum dolor sit amet&lt;/box>
@@ -50,7 +50,8 @@
     </section>
 </div>
 
-<h2>flex-shrink using shorthand flex: 0 0 auto;</h2>
+<h1>flex-shrink using shorthand flex</h1>
+<h2>flex: 0 0 auto;</h2>
 <div class="content">
 <pre>&lt;section style="display:flex; max-width:400px;">
     &lt;box style="flex: 0 0 auto;">Left box Lorem ipsum dolor sit amet</box>
@@ -64,7 +65,7 @@
     </section>
 </div>
 
-<h2>flex-shrink using shorthand flex: 0 1 auto; (default)</h2>
+<h2>flex: 0 1 auto; (default)</h2>
 <div class="content">
 <pre>&lt;section style="display:flex; max-width:400px;">
     &lt;box style="flex: 0 1 auto;">Left box Lorem ipsum dolor sit amet</box>
@@ -78,7 +79,7 @@
     </section>
 </div>
 
-<h2>flex-shrink using shorthand flex: 0 # auto;</h2>
+<h2>flex: 0 # auto;</h2>
 <div class="content">
 <pre>&lt;section style="display:flex; max-width:400px;">
     &lt;box style="flex: 0 1 auto;">Left box Lorem ipsum dolor sit amet</box>
@@ -90,13 +91,14 @@
     </section>
 </div>
 
-<h2>flex-basis using shorthand flex: 0 1 #%;</h2>
+<h1>flex-basis using shorthand flex</h1>
+<h2>flex: 0 1 #%; (larger than content)</h2>
 <div class="content">
 <pre>&lt;section style="display:flex;">
     &lt;box style="flex: 0 1 auto;">Left box</box>
     &lt;box style="flex: 0 1 60%;">Middle box</box>
     &lt;box style="flex: 0 1 auto;">Right box</box>
-    &lt;/section></pre>
+&lt;/section></pre>
     <section style="display:flex;">
         <box style="flex: 0 1 auto">Left box</box>
         <box style="flex: 0 1 60%;">Middle box</box>
@@ -104,31 +106,45 @@
     </section>
 </div>
 
-<h2>flex-basis using shorthand flex: 0 1 #%; (with shrinking)</h2>
+<h2>flex: 0 1 #%; (smaller than content)</h2>
 <div class="content">
 <pre>&lt;section style="display:flex;">
-    &lt;box style="flex: 0 1 auto;">Left box Lorem ipsum dolor sit amet</box>
-    &lt;box style="flex: 0 1 60%;">Middle box Lorem ipsum dolor sit amet</box>
-    &lt;box style="flex: 0 1 auto;">Right box Lorem ipsum dolor sit amet</box>
-    &lt;/section></pre>
+    &lt;box style="flex: 0 1 auto">Left box</box>
+    &lt;box style="flex: 0 1 20%">Middle box is 20% Lorem ipsum dolor sit amet</box>
+    &lt;box style="flex: 0 1 auto;">Right box</box>
+&lt;/section></pre>
     <section style="display:flex;">
-        <box style="flex: 0 1 auto">Left box Lorem ipsum dolor sit amet</box>
-        <box style="flex: 0 1 60%;">Middle box Lorem ipsum dolor sit amet</box>
-        <box style="flex: 0 1 auto;">Right box Lorem ipsum dolor sit amet</box>
+        <box style="flex: 0 1 auto">Left box</box>
+        <box style="flex: 0 1 20%">Middle box is 20% Lorem ipsum dolor sit amet</box>
+        <box style="flex: 0 1 auto;">Right box</box>
     </section>
 </div>
 
-<h2>flex-basis using shorthand flex: 0 0 #%; (without shrinking)</h2>
+<h2>flex: 0 1 #%; (with shrinking)</h2>
 <div class="content">
 <pre>&lt;section style="display:flex;">
-    &lt;box style="flex: 0 1 auto;">Left box Lorem ipsum dolor sit amet</box>
-    &lt;box style="flex: 0 0 60%;">Middle box Lorem ipsum dolor sit amet</box>
-    &lt;box style="flex: 0 1 auto;">Right box Lorem ipsum dolor sit amet</box>
-    &lt;/section></pre>
+    &lt;box style="flex: 0 1 auto;">Left box Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore </box>
+    &lt;box style="flex: 0 1 60%;">Middle box is less than 60%</box>
+    &lt;box style="flex: 0 1 auto;">Right box Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore </box>
+&lt;/section></pre>
     <section style="display:flex;">
-        <box style="flex: 0 1 auto">Left box Lorem ipsum dolor sit amet</box>
-        <box style="flex: 0 0 60%;">Middle box Lorem ipsum dolor sit amet</box>
-        <box style="flex: 0 1 auto;">Right box Lorem ipsum dolor sit amet</box>
+        <box style="flex: 0 1 auto">Left box Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore </box>
+        <box style="flex: 0 1 60%;">Middle box is less than 60%</box>
+        <box style="flex: 0 1 auto;">Right box Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore </box>
+    </section>
+</div>
+
+<h2>flex: 0 0 #%; (without shrinking)</h2>
+<div class="content">
+<pre>&lt;section style="display:flex;">
+    &lt;box style="flex: 0 1 auto;">Left box Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore </box>
+    &lt;box style="flex: 0 0 60%;">Middle box is actually 60%</box>
+    &lt;box style="flex: 0 1 auto;">Right box Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore </box>
+&lt;/section></pre>
+    <section style="display:flex;">
+        <box style="flex: 0 1 auto">Left box Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore </box>
+        <box style="flex: 0 0 60%;">Middle box is actually 60%</box>
+        <box style="flex: 0 1 auto;">Right box Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore </box>
     </section>
 </div>
 

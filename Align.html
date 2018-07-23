@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Alignment examples</title>
+    <link type="text/css" rel="stylesheet" href="shared.css">
+</head>
+<body>
+<h1>Axis alignment of flex container's items using justify-content</h1>
+<h2>justify-content:flex-start (the default)</h2>
+<div class="content">
+<pre>&lt;section style="display:flex; justify-content:flex-start;">
+    &lt;box>Number One&lt;/box>
+    &lt;box>Number Two&lt;/box>
+    &lt;box>Number Three&lt;/box>
+&lt;/section>
+</pre>
+    <section style="display:flex;">
+        <box>Number One</box>
+        <box>Number Two</box>
+        <box>Number Three</box>
+    </section>
+</div>
+
+<h2>justify-content:flex-end</h2>
+<div class="content">
+<pre>&lt;section style="display:flex; justify-content:flex-end;">
+    &lt;box>Number One&lt;/box>
+    &lt;box>Number Two&lt;/box>
+    &lt;box>Number Three&lt;/box>
+&lt;/section>
+</pre>
+    <section style="display:flex; justify-content:flex-end;">
+        <box>Number One</box>
+        <box>Number Two</box>
+        <box>Number Three</box>
+    </section>
+</div>
+
+<h2>justify-content:center</h2>
+<div class="content">
+<pre>&lt;section style="display:flex; justify-content:center;">
+    &lt;box>Number One&lt;/box>
+    &lt;box>Number Two&lt;/box>
+    &lt;box>Number Three&lt;/box>
+&lt;/section>
+</pre>
+    <section style="display:flex; justify-content:center;">
+        <box>Number One</box>
+        <box>Number Two</box>
+        <box>Number Three</box>
+    </section>
+</div>
+
+<h2>justify-content:space-between</h2>
+<div class="content">
+<pre>&lt;section style="display:flex; justify-content:space-between;">
+    &lt;box>Number One&lt;/box>
+    &lt;box>Number Two&lt;/box>
+    &lt;box>Number Three&lt;/box>
+&lt;/section>
+</pre>
+    <section style="display:flex; justify-content:space-between;">
+        <box>Number One</box>
+        <box>Number Two</box>
+        <box>Number Three</box>
+    </section>
+</div>
+
+
+<h2>justify-content:space-around</h2>
+<div class="content">
+<pre>&lt;section style="display:flex; justify-content:space-around;">
+    &lt;box>Number One&lt;/box>
+    &lt;box>Number Two&lt;/box>
+    &lt;box>Number Three&lt;/box>
+&lt;/section>
+</pre>
+    <section style="display:flex; justify-content:space-around;">
+        <box>Number One</box>
+        <box>Number Two</box>
+        <box>Number Three</box>
+    </section>
+</div>
+
+<h1>Cross-axis alignment of flex container's items using align-items</h1>
+<h2>align-items:stretch (the default)</h2>
+<div class="content">
+<pre>&lt;section style="display:flex; align-items:stretch; max-width:400px;">
+    &lt;box>Number One&lt;/box>
+    &lt;box>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore&lt;/box>
+    &lt;box>Number Three&lt;/box>
+&lt;/section>
+</pre>
+    <section style="display:flex; align-items:stretch; max-width:400px;">
+        <box>Number One</box>
+        <box>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</box>
+        <box>Number Three</box>
+    </section>
+</div>
+
+<h2>align-items:flex-start</h2>
+<div class="content">
+<pre>&lt;section style="display:flex; align-items:flex-start; max-width:400px;">
+    &lt;box>Number One&lt;/box>
+    &lt;box>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore&lt;/box>
+    &lt;box>Number Three&lt;/box>
+&lt;/section>
+</pre>
+    <section style="display:flex; align-items:flex-start; max-width:400px;">
+        <box>Number One</box>
+        <box>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</box>
+        <box>Number Three</box>
+    </section>
+</div>
+
+
+</body>
+</html>
