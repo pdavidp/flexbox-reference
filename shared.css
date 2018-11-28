@@ -12,3 +12,9 @@ section, box {
   border-radius: 10px;
   border: black 1px solid;
 }
+
+textarea {
+  padding: 1em;
+  border: none;
+  resize: none;
+}

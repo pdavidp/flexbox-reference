@@ -10,19 +10,18 @@
 <h1>Handy combinations of flex box style</h1>
 <h2>flex-flow: row wrap with flex:auto</h2>
 <div class="content">
-<pre>&lt;section style="display:flex; flex-flow:row wrap; max-width:600px;">
-    &lt;box style="flex:auto">One&lt;/box>
-    &lt;box style="flex:auto">Two&lt;/box>
-    &lt;box style="flex:auto">Three&lt;/box>
-    &lt;box style="flex:auto">Four&lt;/box>
-    &lt;box style="flex:auto">Five&lt;/box>
-    &lt;box style="flex:auto">Six&lt;/box>
-    &lt;box style="flex:auto">Seven&lt;/box>
-    &lt;box style="flex:auto">Eight&lt;/box>
-    &lt;box style="flex:auto">Nine&lt;/box>
-&lt;/section>
-
-</pre>
+    <textarea rows="11" cols="70" wrap="off">
+<section style="display:flex; flex-flow:row wrap; max-width:600px;">
+    <box style="flex:auto">One</box>
+    <box style="flex:auto">Two</box>
+    <box style="flex:auto">Three</box>
+    <box style="flex:auto">Four</box>
+    <box style="flex:auto">Five</box>
+    <box style="flex:auto">Six</box>
+    <box style="flex:auto">Seven</box>
+    <box style="flex:auto">Eight</box>
+    <box style="flex:auto">Nine</box>
+</section></textarea>
     <section style="display:flex; flex-flow:row wrap; max-width:600px;">
         <box style="flex:auto">One</box>
         <box style="flex:auto">Two</box>
@@ -38,22 +37,31 @@
 
 <h2>page layout using flex-flow: column and flex shorthand</h2>
 <div class="content">
-<pre>&lt;section style="display:flex; flex-flow: column;">
-    &lt;box>Heading Line One&lt;br />Heading Line Two&lt;/box>
-    &lt;div style="display:flex;">
-        &lt;box style="flex:0 0 100px;">This&lt;br />does&lt;br />not&lt;br />grow&lt;br />or&lt;br />shrink&lt;/box>
-        &lt;box style="flex:1 2 auto;">Middle box: This grows and shrinks but shrinks at twice the rate of the right box&lt;/box>
-        &lt;box style="flex:0 1 200px;">Right box: Starts off at 200px and will not grow. It does shrink. When it shrinks, it shrinks half as fast as the middle box.&lt;/box>
-    &lt;/div>
-    &lt;box>Footer&lt;/box>
-&lt;/section>
-</pre>
+    <textarea rows="11" cols="150">
+<section style="display:flex; flex-flow: column;">
+    <box>Heading Line One<br />Heading Line Two</box>
+    <div style="display:flex;">
+        <box style="flex:0 0 100px;">This<br />does<br />not<br />grow<br />or<br />shrink</box>
+        <box style="flex:1 2 auto;">Middle box: This grows and shrinks but shrinks at twice the rate of the right box</box>
+        <box style="flex:0 1 200px;">Right box: Starts off at 200px and will not grow. It does shrink. When it shrinks, it shrinks
+            half as fast as the middle box.
+        </box>
+    </div>
+    <box>Footer</box>
+</section></textarea>
     <section style="display:flex; flex-flow: column;">
         <box>Heading Line One<br />Heading Line Two</box>
         <div style="display:flex;">
-            <box style="flex:0 0 100px;">This<br />does<br />not<br />grow<br />or<br />shrink</box>
-            <box style="flex:1 2 auto;">Middle box: This grows and shrinks but shrinks at twice the rate of the right box</box>
-            <box style="flex:0 1 200px;">Right box: Starts off at 200px and will not grow. It does shrink. When it shrinks, it shrinks half as fast as the middle box.</box>
+            <box style="flex:0 0 100px;">This<br />does<br />not<br />grow
+                <br />or<br />shrink
+            </box>
+            <box style="flex:1 2 auto;">Middle box: This grows and shrinks but
+                shrinks at twice the rate of the right box
+            </box>
+            <box style="flex:0 1 200px;">Right box: Starts off at 200px and
+                will not grow. It does shrink. When it shrinks, it shrinks
+                half as fast as the middle box.
+            </box>
         </div>
         <box>Footer</box>
     </section>
@@ -61,45 +69,139 @@
 
 <h2>another page layout using flex-flow: column and flex shorthand</h2>
 <div class="content">
-<pre>&lt;section style="display:flex; width: 600px;">
-        &lt;column style="display:flex; flex-flow: column; flex: 0 0 33%">
-            &lt;box>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/box>
-            &lt;box>Lorem ipsum dolor&lt;/box>
-            &lt;box>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident&lt;/box>
-            &lt;box>Lorem&lt;/box>
-        &lt;/column>
-        &lt;column style="display:flex; flex-flow: column; flex: 0 0 33%">
-            &lt;box>Lorem ipsum dolor sit amet&lt;/box>
-            &lt;box>Lorem&lt;/box>
-            &lt;box>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/box>
-            &lt;box>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident&lt;/box>
-        &lt;/column>
-        &lt;column style="display:flex; flex-flow: column; flex: 0 0 33%">
-            &lt;box>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore&lt;/box>
-            &lt;box>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat &lt;/box>
-            &lt;box>Lorem ipsum&lt;/box>
-            &lt;box>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/box>
-        &lt;/column>
-    &lt;/section>
-</pre>
+    <textarea rows="15" cols="80">
+<section style="display:flex; width: 600px;">
+    <column style="display:flex; flex-flow: column; flex: 0 0 33%">
+        <box>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+            occaecat cupidatat non proident, sunt in culpa qui officia
+            deserunt mollit anim id est laborum.
+        </box>
+        <box>Lorem ipsum dolor</box>
+        <box>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+            occaecat cupidatat non proident
+        </box>
+        <box>Lorem</box>
+    </column>
+    <column style="display:flex; flex-flow: column; flex: 0 0 33%">
+        <box>Lorem ipsum dolor sit amet</box>
+        <box>Lorem</box>
+        <box>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+            occaecat cupidatat non proident, sunt in culpa qui officia
+            deserunt mollit anim id est laborum.
+        </box>
+        <box>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+            occaecat cupidatat non proident
+        </box>
+    </column>
+    <column style="display:flex; flex-flow: column; flex: 0 0 33%">
+        <box>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore
+        </box>
+        <box>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+            occaecat
+        </box>
+        <box>Lorem ipsum</box>
+        <box>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+            occaecat cupidatat non proident, sunt in culpa qui officia
+            deserunt mollit anim id est laborum.
+        </box>
+    </column>
+</section></textarea>
     <section style="display:flex; width: 600px;">
         <column style="display:flex; flex-flow: column; flex: 0 0 33%">
-            <box>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</box>
+            <box>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit
+                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+            </box>
             <box>Lorem ipsum dolor</box>
-            <box>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</box>
+            <box>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit
+                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                occaecat cupidatat non proident
+            </box>
             <box>Lorem</box>
         </column>
         <column style="display:flex; flex-flow: column; flex: 0 0 33%">
             <box>Lorem ipsum dolor sit amet</box>
             <box>Lorem</box>
-            <box>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</box>
-            <box>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</box>
+            <box>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit
+                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+            </box>
+            <box>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit
+                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                occaecat cupidatat non proident
+            </box>
         </column>
         <column style="display:flex; flex-flow: column; flex: 0 0 33%">
-            <box>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</box>
-            <box>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat </box>
+            <box>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore
+            </box>
+            <box>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit
+                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                occaecat
+            </box>
             <box>Lorem ipsum</box>
-            <box>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</box>
+            <box>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit
+                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+            </box>
         </column>
     </section>
 </div>
