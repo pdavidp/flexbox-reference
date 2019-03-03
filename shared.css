@@ -1,16 +1,23 @@
+body {
+  background-color: #c5c5c5;
+}
+
 box {
-  background-color: #cacaca;
+  background-color: #e2e2e2;
   padding: 1em;
   margin: 1em;
+}
+
+section {
+  background-color: slategray;
 }
 
 div.content {
   margin-left:3em;
 }
 
-section, box {
+section, box, textarea {
   border-radius: 10px;
-  border: black 1px solid;
 }
 
 textarea {
